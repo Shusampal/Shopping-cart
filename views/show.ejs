@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Page</title>
+    <link rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    
+    <style>
+        .navbar {
+
+            background-color: rgb(175, 46, 46);
+        }
+
+        .navbar a {
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            color: #e71d36;
+            border-radius: 5px;
+        }
+
+        
+
+
+        .card {
+            border: 2px ridge black;
+        }
+
+        .starability-result {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=");
+  font-size: 0.1em;
+  color: transparent;
+}
+
+.starability-result:after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  height: 30px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=");
+  background-position: 0 -30px;
+}
+
+.starability-result[data-rating="5"]::after {
+  width: 150px;
+}
+
+.starability-result[data-rating="4"]::after {
+  width: 120px;
+}
+
+.starability-result[data-rating="3"]::after {
+  width: 90px;
+}
+
+.starability-result[data-rating="2"]::after {
+  width: 60px;
+}
+
+.starability-result[data-rating="1"]::after {
+  width: 30px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+  .starability-result {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB4CAMAAACZ62E6AAABAlBMVEUAAACZmZmampr2vSObm5v/yiufn5+ampr1viP1viSZmZn2viOZmZmampqampr2viSampqampqcnJz5vyScnJz3wSf/wyn/xiujo6Oqqqr/0C/1vSOampr2viP2viOampr2viP2vST2viOampqampqampr1vyP3viSampr2vyT4vyX3viSbm5ubm5v5wCT8xSmgoKCampqampr3vyb2wiWenp72viOampqZmZmampr2viP2viP1viSampqbm5v2vyT3viObm5v4vyadnZ34wSSbm5v2viSZmZn2viP2vST2viP2viT1viOZmZn2viT2viX3viT3vyb2vyOZmZn1vSOZmZlNN+fKAAAAVHRSTlMA9uz4PQwS8O7r5+fTw4yMelw2MB0dFRELBgbS+/Hfu7uxqKWdg4N7ZmZMPi8pKRgPs0w7Nhb14drKw6Gck21tXkNDIyMZ1rDLycTBtaqVknlfV0sGP8ZwAAADW0lEQVRYw9zWvYqDQBSG4TPDoCAqKhYKQgoVLFaIgZCkiCBBUqVazv3fyu4aEXWdM85Uy779A+LP58AfTQgw73AwtxFiZIwbxMbUfuB3H4b49YNfZrbGodoI52+cm9hH9sbZwwAXOFbo2zjDsSzWxnecuuvaM8MpdtbEPs7y9azF5phZWrjERaWOPdpLbB81cICrgv3W4mvMLbU6RmFQeA5u5HhFEEbHLdWLsMxvHJXxW16Goh+ZqPyny1Az5j79SsCJoWHsBNAxQ9sNF26bWFuMC8v1LY+mmeTadjaqtaNnnXoxWBcde1nNWnzdb68xrOqvu22/MTzuPutujpJ122NvluSb8tTWk85CclDZQwLS0oa2TQpEKacsJy0kSJaQOKJxROKKxhWJ7zS+k9ijsUdim8Y2ZWNUFBP4pMKfOv8onX9WrsI5gd3VVLXtatxcuU0znGUHCUAS2DgrS6mT6hTzrXEjfIZj5Dk2xKkihqm4wKlQfQRqalhUP9UHo3FIPAG/Et44JVLsDDf0JHmB3OEByOwZES8hSAsviGjBdh3ylh6plmMnW4IyAUVJWcE/76vTell1EIaiMBwIAcWBA9GC0lIdKFXQQUsHVVCklN7ojf3+z3JOxYqK2TH555+K6CJJQtRbr9XtDmCnjH0AX9Va8J+liIMvDtRsCk2pEs6hKVexR2g7KuDihwt5a9MfprY0fkLXU9ZmFLpoJolN6GXKWWfZx0tHCocwKJSxC22ItYUEjmBUJHFjfYz1xQxlfaLiZsBExq2IPtbkNbLtOwwuGgjTLkH43mYtSzam7+1Bsr3nm5uExBQUozEh9V7N7uvmwZcqdpm0C6vJW63bZEuXtbrV2zpDzhrpYLBWMnY1mjV7JWFtMio7zbWniWFxvHnWm1yGxXmOPXP+L3YV2ysjnNhaZNeMcHPvuL27BMnVMaujljBAYyje4niH4g2ONyh+4PiB4gOODyjWcKxh1gZBNoJjEY4R/BLhF4IDEQ4QPBoEoyxH4+bxrUsHyxwxQlg0WHXqYifVLmo67cKY/UtaXFxBV26TLjuHrkp8BPJTMij1xQejdkgO24nf7dBOCRcbzQuNOR9Qs64GzzrfQa8It2oFAA6Zrga9xEeq1KHmLUHIiCAWInsg1x/MLqkMsItF8QAAAABJRU5ErkJggg==");
+    background-size: 30px auto;
+  }
+  .starability-result:after {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB4CAMAAACZ62E6AAABAlBMVEUAAACZmZmampr2vSObm5v/yiufn5+ampr1viP1viSZmZn2viOZmZmampqampr2viSampqampqcnJz5vyScnJz3wSf/wyn/xiujo6Oqqqr/0C/1vSOampr2viP2viOampr2viP2vST2viOampqampqampr1vyP3viSampr2vyT4vyX3viSbm5ubm5v5wCT8xSmgoKCampqampr3vyb2wiWenp72viOampqZmZmampr2viP2viP1viSampqbm5v2vyT3viObm5v4vyadnZ34wSSbm5v2viSZmZn2viP2vST2viP2viT1viOZmZn2viT2viX3viT3vyb2vyOZmZn1vSOZmZlNN+fKAAAAVHRSTlMA9uz4PQwS8O7r5+fTw4yMelw2MB0dFRELBgbS+/Hfu7uxqKWdg4N7ZmZMPi8pKRgPs0w7Nhb14drKw6Gck21tXkNDIyMZ1rDLycTBtaqVknlfV0sGP8ZwAAADW0lEQVRYw9zWvYqDQBSG4TPDoCAqKhYKQgoVLFaIgZCkiCBBUqVazv3fyu4aEXWdM85Uy779A+LP58AfTQgw73AwtxFiZIwbxMbUfuB3H4b49YNfZrbGodoI52+cm9hH9sbZwwAXOFbo2zjDsSzWxnecuuvaM8MpdtbEPs7y9azF5phZWrjERaWOPdpLbB81cICrgv3W4mvMLbU6RmFQeA5u5HhFEEbHLdWLsMxvHJXxW16Goh+ZqPyny1Az5j79SsCJoWHsBNAxQ9sNF26bWFuMC8v1LY+mmeTadjaqtaNnnXoxWBcde1nNWnzdb68xrOqvu22/MTzuPutujpJ122NvluSb8tTWk85CclDZQwLS0oa2TQpEKacsJy0kSJaQOKJxROKKxhWJ7zS+k9ijsUdim8Y2ZWNUFBP4pMKfOv8onX9WrsI5gd3VVLXtatxcuU0znGUHCUAS2DgrS6mT6hTzrXEjfIZj5Dk2xKkihqm4wKlQfQRqalhUP9UHo3FIPAG/Et44JVLsDDf0JHmB3OEByOwZES8hSAsviGjBdh3ylh6plmMnW4IyAUVJWcE/76vTell1EIaiMBwIAcWBA9GC0lIdKFXQQUsHVVCklN7ojf3+z3JOxYqK2TH555+K6CJJQtRbr9XtDmCnjH0AX9Va8J+liIMvDtRsCk2pEs6hKVexR2g7KuDihwt5a9MfprY0fkLXU9ZmFLpoJolN6GXKWWfZx0tHCocwKJSxC22ItYUEjmBUJHFjfYz1xQxlfaLiZsBExq2IPtbkNbLtOwwuGgjTLkH43mYtSzam7+1Bsr3nm5uExBQUozEh9V7N7uvmwZcqdpm0C6vJW63bZEuXtbrV2zpDzhrpYLBWMnY1mjV7JWFtMio7zbWniWFxvHnWm1yGxXmOPXP+L3YV2ysjnNhaZNeMcHPvuL27BMnVMaujljBAYyje4niH4g2ONyh+4PiB4gOODyjWcKxh1gZBNoJjEY4R/BLhF4IDEQ4QPBoEoyxH4+bxrUsHyxwxQlg0WHXqYifVLmo67cKY/UtaXFxBV26TLjuHrkp8BPJTMij1xQejdkgO24nf7dBOCRcbzQuNOR9Qs64GzzrfQa8It2oFAA6Zrga9xEeq1KHmLUHIiCAWInsg1x/MLqkMsItF8QAAAABJRU5ErkJggg==");
+    background-size: 30px auto;
+  }
+}
+
+.starability-basic {
+  display: block;
+  position: relative;
+  width: 150px;
+  min-height: 60px;
+  padding: 0;
+  border: none;
+}
+
+.starability-basic > input {
+  position: absolute;
+  margin-right: -100%;
+  opacity: 0;
+}
+
+.starability-basic > input:checked ~ label,
+.starability-basic > input:focus ~ label {
+  background-position: 0 0;
+}
+
+.starability-basic > input:checked + label,
+.starability-basic > input:focus + label {
+  background-position: 0 -30px;
+}
+
+.starability-basic > input[disabled]:hover + label {
+  cursor: default;
+}
+
+.starability-basic > input:not([disabled]):hover ~ label {
+  background-position: 0 0;
+}
+
+.starability-basic > input:not([disabled]):hover + label {
+  background-position: 0 -30px;
+}
+
+.starability-basic > input:not([disabled]):hover + label::before {
+  opacity: 1;
+}
+
+.starability-basic > input:focus + label {
+  outline: 1px dotted #999;
+}
+
+.starability-basic .starability-focus-ring {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  outline: 2px dotted #999;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.starability-basic > .input-no-rate:focus ~ .starability-focus-ring {
+  opacity: 1;
+}
+
+.starability-basic > label {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  font-size: 0.1em;
+  color: transparent;
+  cursor: pointer;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+}
+
+.starability-basic > label::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 30px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAA8CAMAAABGivqtAAAAxlBMVEUAAACZmZn2viTHuJ72viOampqampr1viSampr3vySampqdnZ34wiX1vSSampr1vSOZmZmampr1viT2vSOampr2viT2viSampr2viSampr2vyX4vyWbm5v3vSSdnZ32wSadnZ36wCWcnJyZmZn/wSr/2ySampr2vSP2viSZmZn2vSSZmZn2vST2viSampr2viSbm5ubm5uZmZn1vSSampqbm5v2vSWampqampr3vSf5wiT5vyagoKD/xCmkpKT/yCSZmZn1vSO4V2dEAAAAQHRSTlMA+vsG9fO6uqdgRSIi7+3q39XVqZWVgnJyX09HPDw1NTAwKRkYB+jh3L6+srKijY2Ef2lpYllZUU5CKigWFQ4Oneh1twAAAZlJREFUOMuV0mdzAiEQBmDgWq4YTWIvKRqT2Htv8P//VJCTGfYQZnw/3fJ4tyO76KE0m1b2fZu+U/pu4QGlA7N+Up5PIz9d+cmkbSrSNr9seT3GKeNYIyeO5j16S28exY5suK0U/QKmmeCCX6xs22hJLVkitMImxCvEs8EG3SCRCN/ViFPqnq5epIzZ07QJJvkM9Tkz1xnkmXbfSvR7f4H8AtXBkLGj74mMvjM1+VHZpAZ4LM4K/LBWEI9jwP71v1ZEQ6dyvQMf8A/1pmdZnKce/VH1iIsdte4U8VEtY23xOujxtFpWDgKbfjD2YeEhY0OzfjGeLyO/XfnNpAcmcjDwKOXRfU1IyiTRyEkaiz67pb9oJHJb9vVqKfgjLBPyF5Sq9T0KmSUhQmtiQrJGPHVi0DoSabj31G2gW3buHd0pY85lNdcCk8xlNDPXMuSyNiwl+theIb9C7RLIpKvviYy+M6H8qGwSAp6Is19+GP6KxwnggJ/kq6Jht5rnRQA4z9zyRRaXssvyqp5I6Vutv0vkpJaJtnjpz/8B19ytIayazLoAAAAASUVORK5CYII=");
+  background-position: 0 30px;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.starability-basic > label:nth-of-type(5)::before {
+  width: 120px;
+  left: -120px;
+}
+
+.starability-basic > label:nth-of-type(4)::before {
+  width: 90px;
+  left: -90px;
+}
+
+.starability-basic > label:nth-of-type(3)::before {
+  width: 60px;
+  left: -60px;
+}
+
+.starability-basic > label:nth-of-type(2)::before {
+  width: 30px;
+  left: -30px;
+}
+
+.starability-basic > label:nth-of-type(1)::before {
+  width: 0px;
+  left: 0px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) {
+  .starability-basic > label {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAB4CAMAAACZ62E6AAABAlBMVEUAAACZmZmampr2vSObm5v/yiufn5+ampr1viP1viSZmZn2viOZmZmampqampr2viSampqampqcnJz5vyScnJz3wSf/wyn/xiujo6Oqqqr/0C/1vSOampr2viP2viOampr2viP2vST2viOampqampqampr1vyP3viSampr2vyT4vyX3viSbm5ubm5v5wCT8xSmgoKCampqampr3vyb2wiWenp72viOampqZmZmampr2viP2viP1viSampqbm5v2vyT3viObm5v4vyadnZ34wSSbm5v2viSZmZn2viP2vST2viP2viT1viOZmZn2viT2viX3viT3vyb2vyOZmZn1vSOZmZlNN+fKAAAAVHRSTlMA9uz4PQwS8O7r5+fTw4yMelw2MB0dFRELBgbS+/Hfu7uxqKWdg4N7ZmZMPi8pKRgPs0w7Nhb14drKw6Gck21tXkNDIyMZ1rDLycTBtaqVknlfV0sGP8ZwAAADW0lEQVRYw9zWvYqDQBSG4TPDoCAqKhYKQgoVLFaIgZCkiCBBUqVazv3fyu4aEXWdM85Uy779A+LP58AfTQgw73AwtxFiZIwbxMbUfuB3H4b49YNfZrbGodoI52+cm9hH9sbZwwAXOFbo2zjDsSzWxnecuuvaM8MpdtbEPs7y9azF5phZWrjERaWOPdpLbB81cICrgv3W4mvMLbU6RmFQeA5u5HhFEEbHLdWLsMxvHJXxW16Goh+ZqPyny1Az5j79SsCJoWHsBNAxQ9sNF26bWFuMC8v1LY+mmeTadjaqtaNnnXoxWBcde1nNWnzdb68xrOqvu22/MTzuPutujpJ122NvluSb8tTWk85CclDZQwLS0oa2TQpEKacsJy0kSJaQOKJxROKKxhWJ7zS+k9ijsUdim8Y2ZWNUFBP4pMKfOv8onX9WrsI5gd3VVLXtatxcuU0znGUHCUAS2DgrS6mT6hTzrXEjfIZj5Dk2xKkihqm4wKlQfQRqalhUP9UHo3FIPAG/Et44JVLsDDf0JHmB3OEByOwZES8hSAsviGjBdh3ylh6plmMnW4IyAUVJWcE/76vTell1EIaiMBwIAcWBA9GC0lIdKFXQQUsHVVCklN7ojf3+z3JOxYqK2TH555+K6CJJQtRbr9XtDmCnjH0AX9Va8J+liIMvDtRsCk2pEs6hKVexR2g7KuDihwt5a9MfprY0fkLXU9ZmFLpoJolN6GXKWWfZx0tHCocwKJSxC22ItYUEjmBUJHFjfYz1xQxlfaLiZsBExq2IPtbkNbLtOwwuGgjTLkH43mYtSzam7+1Bsr3nm5uExBQUozEh9V7N7uvmwZcqdpm0C6vJW63bZEuXtbrV2zpDzhrpYLBWMnY1mjV7JWFtMio7zbWniWFxvHnWm1yGxXmOPXP+L3YV2ysjnNhaZNeMcHPvuL27BMnVMaujljBAYyje4niH4g2ONyh+4PiB4gOODyjWcKxh1gZBNoJjEY4R/BLhF4IDEQ4QPBoEoyxH4+bxrUsHyxwxQlg0WHXqYifVLmo67cKY/UtaXFxBV26TLjuHrkp8BPJTMij1xQejdkgO24nf7dBOCRcbzQuNOR9Qs64GzzrfQa8It2oFAA6Zrga9xEeq1KHmLUHIiCAWInsg1x/MLqkMsItF8QAAAABJRU5ErkJggg==");
+    background-size: 30px auto;
+  }
+}
+
+@media screen and (-ms-high-contrast: active) {
+  .starability-basic {
+    width: auto;
+  }
+  .starability-basic > input {
+    position: static;
+    margin-right: 0;
+    opacity: 1;
+  }
+  .starability-basic .input-no-rate {
+    display: none;
+  }
+  .starability-basic > label {
+    display: inline;
+    float: none;
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    color: inherit;
+    background: none;
+  }
+  .starability-basic > label::before, .starability-basic > label::after {
+    display: none;
+  }
+}        
+    </style>
+
+</head>
+
+<body>
+    <%- include('./partials/navbar') %>
+        <br>
+        <div class="container-fluid">
+            <%if(success.length){%>
+              <%- include('./partials/flashSuccess') %>
+            <%}%>
+
+            <div class="row">
+
+                <div class="col col-lg-7 col-md-12 col-sm-12">
+
+                    <div class="card" style="width: 35rem; margin: 10px;">
+                        <img src="<%= product.img %>" class="card-img-top m-0" alt="image">
+                        <div class="card-body">
+                            <h4 class="card-title fs-1">
+                                <%= product.name %>
+                            </h4>
+                            <h5 class="card-title fs-3">&#8377; <%= product.price %>
+                            </h5>
+                            <p class="card-text fs-5">
+                                <%= product.desc %>
+                            </p>
+                            <form action="/products/<%= product._id %>/cart" class="form" method="POST">
+                                <button class="btn btn-success ">Add To Cart</button>
+                                <label for="quantity"></label>
+                                <input type="number" name="quantity" id="quantity" value="1" class="text-center "
+                                    style="width: 50px; outline: none;" min="1">
+                            </form>
+                            <br>
+                            <% if(product.user === user.username){ %>
+                              <form action="/products/<%= product._id %>/edit" method="GET" class="form"
+                                  style="display: inline; margin-right: 20px;">
+                                  <button class="btn btn-warning " style="display: inline;">Edit</button>
+                              </form>
+                              <form action="/products/<%= product._id %>?_method=DELETE" method="POST" class="form" style="display: inline;">
+                                  <button class="btn btn-danger " style="display: inline;">Delete</button>
+                              </form>
+                            <%}%>
+                        </div>
+                    </div>
+                </div>
+                
+                    
+                <div class="col col-lg-4 col-md-12 col-sm-12">
+                    <h1 >Leave a Review</h1>
+                    <form action="/products/<%= product._id %>/review" method="POST" class="validated-form"  novalidate>
+                        <fieldset class="starability-basic">
+                            <input type="radio" id="no-rate" class="input-no-rate" name="rating" value="0" checked aria-label="No rating." />
+                            <input type="radio" id="first-rate1" name="rating" value="1" required/>
+                            <label for="first-rate1" title="Terrible">1 star</label>
+                            <input type="radio" id="first-rate2" name="rating" value="2" required/>
+                            <label for="first-rate2" title="Not good">2 stars</label>
+                            <input type="radio" id="first-rate3" name="rating" value="3" required/>
+                            <label for="first-rate3" title="Average">3 stars</label>
+                            <input type="radio" id="first-rate4" name="rating" value="4" required/>
+                            <label for="first-rate4" title="Very good">4 stars</label>
+                            <input type="radio" id="first-rate5" name="rating" value="5" required/>
+                            <label for="first-rate5" title="Amazing">5 stars</label>
+                        </fieldset>
+                        <div class="mb-3" style="width: 25rem;">
+                            <label for="review" class="form-label">Review</label>
+                            <textarea type="text" class="form-control" id="review" name="review" rows="3" cols="35"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <br>
+                    <h1>All Reviews</h1>
+                    <%for(review of product.review.reverse()){%>
+                        <div class="card col-lg-12 mb-2" style="border: 0.1px solid black;">
+                            <div class="card-body">
+                                <h3><%= review.user %></h3>
+                                <p class="starability-result" data-rating="<%=review.rating%>">
+                                    Rated: <%=review.rating%>
+                                </p>
+                                <p class="card-text"><%= review.review %></p>
+
+                                <%if(user.username === review.user){%>
+                                  <form action="/products/<%= product._id %>/review/<%= review._id %>?_method=DELETE" method="POST">
+                                      <input type="submit" value="Delete" class="btn btn-danger">
+                                  </form>
+                                <%}%>
+                            </div>
+                        </div>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+            crossorigin="anonymous"></script>
+
+        <script>
+            (function () {
+                'use strict'
+
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                const forms = document.querySelectorAll('.validated-form')
+
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+
+                            form.classList.add('was-validated')
+                        }, false)
+                    })
+            })()
+        </script>
+
+</body>
+
+</html>
